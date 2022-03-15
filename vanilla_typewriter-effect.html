@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Typewriter effect for video</title>
+
+<style>
+#target{  
+  color: ghostwhite;
+  font-family: Courier New;
+  font-size: 69px;
+}
+body{background-color:black;padding:1rem;};
+</style>
+</head>
+<body>
+
+<strong><pre id="target">How much wood would a woodchuck chuck
+(if a woodchuck could chuck wood)?</pre></strong>
+
+  <script>
+// *** JS Typewriter Effect ***
+
+    let i = 0;
+    let target = document.getElementById("target");
+    let text = target.innerHTML;
+    target.innerHTML = ' ';
+    let speed = 69; //speed duration of effect in millisec (higher number is slower)
+
+    typeWriter(); //to call function
+    function typeWriter() {
+        if (i < text.length) {
+            target.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+</body>
+</html>
+

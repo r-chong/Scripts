@@ -13,4 +13,4 @@ SetWorkingDir, %A_ScriptDir%  ;Set default directory to where this script file i
 LogFile := "MyLog.txt"
 FileAppend, This is a message`n, %LogFile%  ;Note the trailing (`n) to start a new line. This could instead be a leading (`n) if you want. (Note %% because it's expecting and unquoted string)
 
-https://github.com/GorvGoyl/Autohotkey-Scripts-Windows
+;Pulled from https://github.com/GorvGoyl/Autohotkey-Scripts-Windows

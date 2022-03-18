@@ -1,4 +1,4 @@
-Menu, Tray, Icon, D:\Users\Documents\MyLogos\ico\tinypickaxe.ico
+Menu, Tray, Icon, D:\Users\Documents\MyLogos\ico\pickaxe.ico
 
 ^j::
 Loop
